@@ -1,0 +1,47 @@
+﻿@model Doacoes
+
+
+@{
+    ViewData["Title"] = "Editar - Histórico de Doação";
+}
+
+<h3>Editar - Histórico de Doação</h3>
+
+
+
+<form asp-controller="Doador" asp-action="Editar" method="post">
+
+
+
+
+    <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <label for="DataDoacao">Data</label>
+            <input type="date" class="form-control" id="DataDoacao" name="DataDoacao">
+
+            <div class="form-group"></div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="Clinica" class="form-label">Clínica:</label>
+            <input type="text" class="form-control" id="Clinica">
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label for="QntSangue" class="form-label">Quantidade de Sangue:</label>
+            <input type="text" class="form-control" id="QntSangue">
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label for="Sentimento" class="form-label">Sentimento:</label>
+            <input type="text" class="form-control" id="Sentimento">
+        </div>
+    </div>
+
+</form>
+
+<br />
+
+<a class="btn btn-primary" role="button" asp-controller="Doador" asp-action="MenuDoador">Salvar</a>

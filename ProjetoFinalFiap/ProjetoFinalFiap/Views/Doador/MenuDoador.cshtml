@@ -1,0 +1,81 @@
+﻿@model Doacoes
+
+@{
+    ViewData["Title"] = "Menu Doador";
+}
+
+
+<h1 class="display-4"> Histórico de doação</h1>
+
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data</th>
+            <th scope="col">Clínica</th>
+            <th scope="col">Quantidade de Sangue</th>
+            <th scope="col">Sentimento</th>
+
+            <th scope="col"></th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>04/10/2022</td>
+            <td>FLEURY S A</td>
+            <td>500.0</td>
+            <td>Ótimo</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn  btn-primary" asp-controller="Doador" asp-action="Editar">Editar</a>
+
+                </div>
+          
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>10/05/2022</td>
+            <td>Hemocentro Pro Sangue</td>
+            <td>500.0</td>
+            <td>Bem</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn  btn-primary" asp-controller="Doador" asp-action="Editar">Editar</a>
+
+                </div>
+              
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>05/01/2022</td>
+            <td>Hemocentro Paraíso</td>
+            <td>500.0</td>
+            <td>Bem</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn  btn-primary" asp-controller="Doador" asp-action="Editar">Editar</a>
+
+                </div>
+             
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br />
+
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    <a class="btn btn-primary" role="button" asp-controller="Doador" asp-action="Adicionar">Adicionar Doação</a>
+
+</div>
+
+<br />
+
